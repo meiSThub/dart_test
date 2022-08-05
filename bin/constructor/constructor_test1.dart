@@ -21,3 +21,9 @@ class Person {
       : this.name = name,
         this.age = age {}
 }
+
+main() {
+  print('${Person("张三", 10).name}');
+  var person = Person.init2("张三", 12);
+  print('${person.name},age=${person.age}');
+}
